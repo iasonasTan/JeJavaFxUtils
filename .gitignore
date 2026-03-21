@@ -2,7 +2,6 @@
 .settings
 .project
 bin/*
-lib/*
 
 # Ignore Gradle project-specific cache directory
 .gradle
