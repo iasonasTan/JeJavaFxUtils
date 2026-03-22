@@ -9,6 +9,7 @@ import com.fxcontext.receiver.MessageReceiver;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.util.Callback;
+import javafx.scene.Parent;
 
 public interface Context {
 	void broadcastMessage(Message data);
@@ -25,11 +26,11 @@ public interface Context {
 		};
 	}
 	
-	public static Scene loadFXML(Context context, URL url, URL style) {
+	public static Parent loadFXML(Context context, URL url, URL style) {
 		try {
 			FXMLLoader loader = new FXMLLoader(url);
 			loader.setControllerFactory(controllerFactory(context));
-			Scene scene = loader.load();
+			Parent scene = loader.load();
 			scene.getStylesheets().add(style.toExternalForm());
 			return scene;
 		} catch (Exception e) {
