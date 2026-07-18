@@ -1,19 +1,20 @@
 package com.fxcontext.main;
 
-import java.lang.reflect.Constructor;
-import java.net.URL;
-
 import com.fxcontext.message.Message;
 import com.fxcontext.receiver.MessageReceiver;
-
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Scene;
-import javafx.util.Callback;
 import javafx.scene.Parent;
+import javafx.stage.Stage;
+import javafx.util.Callback;
+
+import java.lang.reflect.Constructor;
+import java.net.URL;
 
 public interface Context {
 	void broadcastMessage(Message data);
 	void registerReceiver(MessageReceiver receiver);
+
+	Stage getRootStage();
 	
 	public static Callback<Class<?>, Object> controllerFactory(Context context) {
 		return clazz -> {
