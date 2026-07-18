@@ -1,4 +1,4 @@
-package com.fxcontext.message;
+package com.jjfx.message;
 
 public class Message {
 	public static Builder newBuilder() {

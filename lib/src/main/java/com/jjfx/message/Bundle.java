@@ -1,4 +1,4 @@
-package com.fxcontext.message;
+package com.jjfx.message;
 
 import java.util.HashMap;
 import java.util.Map;

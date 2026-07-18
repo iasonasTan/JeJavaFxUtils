@@ -1,7 +1,7 @@
-package com.fxcontext.main;
+package com.jjfx.context;
 
-import com.fxcontext.message.Message;
-import com.fxcontext.receiver.MessageReceiver;
+import com.jjfx.message.Message;
+import com.jjfx.receiver.MessageReceiver;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.stage.Stage;

@@ -1,6 +1,6 @@
-package com.fxcontext.receiver;
+package com.jjfx.receiver;
 
-import com.fxcontext.message.Message;
+import com.jjfx.message.Message;
 
 @FunctionalInterface
 public interface MessageReceiver {

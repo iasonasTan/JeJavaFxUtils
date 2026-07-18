@@ -9,7 +9,7 @@ module JavaFXContext {
 	requires javafx.graphics;
 	requires javafx.fxml;
 	
-	exports com.fxcontext.main;
-	exports com.fxcontext.receiver;
-	exports com.fxcontext.message;
+	exports com.jjfx.context;
+	exports com.jjfx.receiver;
+	exports com.jjfx.message;
 }
