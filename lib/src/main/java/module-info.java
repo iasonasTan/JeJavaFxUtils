@@ -4,7 +4,7 @@
 /**
  * 
  */
-module JavaFXContext {
+module JeJFX {
 	requires javafx.base;
 	requires javafx.graphics;
 	requires javafx.fxml;
